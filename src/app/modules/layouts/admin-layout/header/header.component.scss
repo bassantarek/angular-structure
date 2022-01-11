@@ -1,0 +1,8 @@
+div {
+    p {
+        width: calc(100% - 240px);
+        height: 80px;background-color: cyan;
+        position: absolute;
+        right: 0;
+    }
+}
