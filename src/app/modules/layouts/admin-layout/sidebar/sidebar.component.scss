@@ -1,13 +1,117 @@
 .sidebar {
   width: 80px;
-  color: #fff;
+  min-height: 100vh;
   background-color: #11101e;
   transition: all 0.4s ease-in-out;
+  padding: 6px 14px;
+
+  .logo_content {
+    .logo {
+      color: #fff;
+      display: flex;
+      height: 50px;
+      width: 100%;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      i {
+        font-size: 28px;
+        margin-inline-end: 5px;
+      }
+      .logo_name {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  ul {
+    margin-top: 20px;
+    li {
+      position: relative;
+      height: 50px;
+      width: 100%;
+      margin-inline-start: -2rem;
+      list-style: none;
+      line-height: 50px;
+      a {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 12px;
+        white-space: nowrap; /* ⚡⚡VERY IMPORTANT FOR LINE BREAKING ISSUE⚡⚡ */
+        i {
+          height: 50px;
+          min-width: 50px;
+          border-radius: 12px;
+          line-height: 50px;
+          text-align: center;
+          transition: all 0.4s ease;
+          &:hover {
+            background-color: #fff;
+            color: #11101e;
+          }
+        }
+        .links-name {
+          opacity: 0;
+          pointer-events: none;
+        }
+      }
+
+      .tooltip {
+        position: absolute;
+        left: 130px;
+        top: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 6px;
+        height: 35px;
+        width: 122px;
+        background-color: #fff;
+        line-height: 35px;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        transition: 0s;
+        opacity: 0;
+        pointer-events: none;
+        display: block;
+      }
+      &:hover {
+        .tooltip {
+          transition: all 0.5s ease;
+          opacity: 1;
+          top: 50%;
+        }
+      }
+    }
+  }
 }
 
 .sidebar.active {
-    width: 240px;
-  span {
-    color: chartreuse;
+  width: 240px;
+
+  .logo_content {
+    .logo {
+      opacity: 1;
+      pointer-events: none;
+    }
+  }
+  ul {
+    li {
+      a {
+        transition: all 0.4s ease;
+        &:hover {
+          color: #11101e;
+          background-color: #fff;
+        }
+        .links-name {
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+      .tooltip {
+        display: none;
+      }
+    }
   }
 }
