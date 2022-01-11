@@ -11,6 +11,12 @@
     min-height: 100vh;
     width: 100%;
     background-color: khaki;
+    .outlet {
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
     // transition: all 0.4s ease-in-out;
     // &.active {
     //   width: 100%;
