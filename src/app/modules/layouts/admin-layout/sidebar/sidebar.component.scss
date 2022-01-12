@@ -56,7 +56,7 @@
         .links-name {
           opacity: 0;
           pointer-events: none;
-          transition: all 0.5s ease;/* !!! */
+          // transition: all 0.2s ease;/* !!! */
         }
       }
 
@@ -105,10 +105,14 @@
           color: #11101e;
           background-color: #fff;
         }
+        i {
+          pointer-events: none;
+        }
         .links-name {
           opacity: 1;
           pointer-events: auto;
-          transition-delay: 0.1s;/* !!! */
+          transition-delay: 0.2s;/* !!! */
+          transition-property: opacity;
         }
       }
       .tooltip {
