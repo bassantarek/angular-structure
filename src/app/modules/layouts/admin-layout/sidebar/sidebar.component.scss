@@ -56,6 +56,7 @@
         .links-name {
           opacity: 0;
           pointer-events: none;
+          transition: all 0.5s ease;/* !!! */
         }
       }
 
@@ -107,6 +108,7 @@
         .links-name {
           opacity: 1;
           pointer-events: auto;
+          transition-delay: 0.1s;/* !!! */
         }
       }
       .tooltip {
