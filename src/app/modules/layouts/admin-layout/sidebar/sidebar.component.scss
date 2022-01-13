@@ -1,7 +1,7 @@
 /* 📢📢LTR📢📢 */
 .sidebar {
   width: 80px;
-  height: 95%;
+  height: 95vh;
   min-height: 95vh;
   background-color: #11101d;
   transition: all 0.4s ease-in-out;
@@ -33,6 +33,18 @@ ul {
   color: #fff;
   font-weight: 600;
   margin-inline-start: 5px;
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.sidebar.active .logo_details .logo_name {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  margin-inline-start: 5px;
+  display: block;
+  opacity: 1;
 }
 
 .sidebar .nav-links {
@@ -44,6 +56,7 @@ ul {
   position: relative;
   list-style: none;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 .sidebar .nav-links li:hover {
@@ -82,8 +95,14 @@ ul {
   background-color: #1d1b31;
   color: #fff;
   opacity: 0;
+  // display: none;/* worest the animation but must be there so the user can click on the submenue */
   white-space: nowrap;
   transition: all 0.3s ease;
+}
+.sidebar .nav-links li:hover .tooltip {
+  // display: block;/* worest the animation but must be there so the user can click on the submenue */
+  opacity: 1;
+  top: 0;
 }
 .sidebar .nav-links .tooltip li {
   padding: 6px 0;
@@ -96,10 +115,6 @@ ul {
 .sidebar .nav-links .tooltip li.links_name{
   opacity: 1;
   font-size: 18px;
-}
-.sidebar .nav-links li:hover .tooltip {
-  opacity: 1;
-  top: 0;
 }
 .sidebar.active .nav-links li .tooltip {
   display: none;
@@ -130,18 +145,26 @@ ul {
 
 .sidebar .nav-links li .sub-menu {
   display: none;
-  transition: all 0.4s ease;
   opacity: 0;
+  transition: all 2s ease;
 }
 .sidebar.active .nav-links li .sub-menu {
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
   background-color: #1d1b31;
   opacity: 1;
+  // display: none;
+}
+.sidebar.active .nav-links li .sub-menu {
   display: none;
 }
-.sidebar.active .nav-links li .sub-menu.showMenu {
+#btn-1:checked + .sub-menu {
   display: block;
+  opacity: 1;
+}
+#btn-2:checked + .sub-menu {
+  display: block;
+  opacity: 1;
 }
 .sidebar.active .nav-links li .sub-menu a {
   color: #fff;
