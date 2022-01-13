@@ -1,7 +1,7 @@
 .master_layout {
   display: flex;
   justify-content: space-between;
-  background-color: indianred;
+  background-color: #f3f6f9;
 
   .system_control {
     background-color: #11101e;
@@ -9,12 +9,17 @@
 
   .system_content {
     min-height: 100vh;
-    width: 100%;
-    background-color: khaki;
+    width: calc(100% - 80px);
+    // background-color: khaki;
+    background-color: #f3f6f9;
+    transition: all 0.4s ease-in-out;
 
+    &.active {
+      width: calc(100% - 260px);
+    }
     .outlet {
       margin: auto;
-      width: calc(100% - 40px);
+      width: calc(100% - 60px);
       overflow-y: scroll;
       &::-webkit-scrollbar {
         width: 0;

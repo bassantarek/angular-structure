@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  btn!:HTMLElement;
+  btn!: HTMLElement;
 
   constructor() { }
 
@@ -15,6 +15,11 @@ export class SidebarComponent implements OnInit {
   }
 
   // const btn = (id: string): HTMLElement => document.getElementById(id);
-  
 
+  viewSubMenu() {
+    let arrow = document.querySelector('.arrow');
+    let subMenu = document.querySelector('.sub-menu');
+    subMenu?.classList.toggle("showMenu")
+    console.log("showMenu", arrow)
+  }
 }
