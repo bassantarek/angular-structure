@@ -68,7 +68,16 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
-
+.sidebar .nav-links li .icon-links label {
+  opacity: 0;
+  display: none;
+  transition: all 0.4s ease;
+}
+.sidebar.active .nav-links li .icon-links label {
+  opacity: 1;
+  display: block ;
+  transition-delay: 0.3s;;
+}
 .sidebar .nav-links li i {
   color: #fff;
   height: 50px;
@@ -77,6 +86,7 @@ ul {
   text-align: center;
   line-height: 50px;
   font-size: 20px;
+  border-radius: 12px;
 }
 
 .sidebar .nav-links li a {
@@ -95,12 +105,12 @@ ul {
   background-color: #1d1b31;
   color: #fff;
   opacity: 0;
-  // display: none;/* worest the animation but must be there so the user can click on the submenue */
+  display: none;/* worest the animation but must be there so the user can click on the submenue */
   white-space: nowrap;
   transition: all 0.3s ease;
 }
 .sidebar .nav-links li:hover .tooltip {
-  // display: block;/* worest the animation but must be there so the user can click on the submenue */
+  display: block;/* worest the animation but must be there so the user can click on the submenue */
   opacity: 1;
   top: 0;
 }
@@ -121,7 +131,18 @@ ul {
 }
 .sidebar .nav-links li a .links_name {
   opacity: 0;
+  display: none;
   transition: all 0.3s ease;
+}
+.sidebar.active .nav-links li a .links_name {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin-inline-start: 5px;
+  opacity: 1;
+  display: block;
+  transition-delay: 0.1s;
+  transition-property: opacity;
 }
 .sidebar .nav-links li  .fa-chevron-down {
   opacity: 0;
@@ -131,15 +152,6 @@ ul {
 .sidebar.active .nav-links li  .fa-chevron-down {
   opacity: 1;
   transition-delay: 0.2s;
-  transition-property: opacity;
-}
-.sidebar.active .nav-links li a .links_name {
-  font-size: 18px;
-  font-weight: 400;
-  color: #fff;
-  margin-inline-start: 5px;
-  opacity: 1;
-  transition-delay: 0.1s;
   transition-property: opacity;
 }
 
