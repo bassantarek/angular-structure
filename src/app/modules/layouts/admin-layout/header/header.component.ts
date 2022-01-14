@@ -13,4 +13,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   toggleSidebar = () => this._admin_layout_service.toggleSidebar();
+
+  // toggleProfile () {
+  //   const profileBody = document.querySelector('.profile-body');
+  //   const toggleProfile = document.querySelector('.toggle-profile');
+  // }
 }

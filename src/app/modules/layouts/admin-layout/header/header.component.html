@@ -1,7 +1,59 @@
-<div class="header" id="header">
-    <p>
-        header works!
-        <i class="fas fa-bars" (click)="toggleSidebar()"></i>
-    </p>
-    <span>TESSSSSSSSSSST</span>
+<div class="header shadow-sm" id="header">
+    <div class="toggle-bell-wrapper">
+        <span class="toggle-icon shadow-sm"(click)="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </span>
+        <span class="bell-icon shadow-sm">
+            <i class="far fa-bell"></i>
+        </span>
+    </div>
+    
+    <div class="profile-block">
+        <input type="checkbox" name="toggle" id="toggle" hidden>
+        <div class="profile-header">
+            <div class="imgBx">
+                <img src="../../../../../assets/images/userProfileImg.jpg" alt="User Profile Image">
+            </div>
+            <h2>BassanTarek <br> <span>Computer Engineer</span></h2>
+            <label for="toggle">
+                <span class="toggle-profile">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+            </label>
+        </div>
+        <div class="profile-body show-profile-body">
+            <ul class="navigation">
+                <li>
+                    <i class="fas fa-user-edit"></i>
+                    <a>Edit Profile</a>
+                </li>
+                <li>
+                    <i class="fas fa-comment-alt"></i>
+                    <a>Inbox</a>
+                </li>
+                <li>
+                    <i class="fas fa-cog"></i>
+                    <a>Settings</a>
+                </li>
+                <li>
+                    <i class="far fa-question-circle"></i>
+                    <a>Support</a>
+                </li>
+                <li>
+                    <i class="fas fa-sign-out-alt"></i>
+                    <a>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="profile-wrapper">
+        <!-- <div class="card">
+            <div class="content">
+                <div class="imgBx">
+                    <img src="../../../../../assets/images/userProfileImg.jpg" alt="User Profile Image">
+                </div>
+                <h2>BassanTarek <br> <span>Computer Engineer</span> </h2>
+            </div>
+        </div> -->
+    </div>
 </div>

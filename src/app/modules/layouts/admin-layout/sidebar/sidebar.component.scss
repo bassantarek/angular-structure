@@ -131,7 +131,7 @@ ul {
 }
 .sidebar .nav-links li a .links_name {
   opacity: 0;
-  display: none;
+  display: none;/* """""""" */
   transition: all 0.3s ease;
 }
 .sidebar.active .nav-links li a .links_name {
@@ -140,7 +140,7 @@ ul {
   color: #fff;
   margin-inline-start: 5px;
   opacity: 1;
-  display: block;
+  display: block;/* """""""" */
   transition-delay: 0.1s;
   transition-property: opacity;
 }
