@@ -9,8 +9,8 @@
 
   .system_content {
     min-height: 100vh;
-    width: calc(100% - 80px);
-    // background-color: khaki;
+    width: 100%;
+    margin: 0;
     background-color: #E6E6FA;
     transition: all 0.4s ease-in-out;
 
@@ -20,10 +20,7 @@
     .outlet {
       margin: auto;
       width: calc(100% - 60px);
-      // overflow-y: scroll;
-      // &::-webkit-scrollbar {
-      //   width: 0;
-      // }
+      // background-color: red;
     }
   }
 }
