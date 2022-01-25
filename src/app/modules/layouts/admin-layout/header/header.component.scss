@@ -8,6 +8,7 @@
   justify-content: space-between;
   align-items: center;
   transition: all 0.4s ease-in-out;
+  z-index: 100;
   border-radius: 6px;
   &.active {
     width: calc(100vw - 260px);

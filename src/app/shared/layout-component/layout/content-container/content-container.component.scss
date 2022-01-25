@@ -1,0 +1,134 @@
+:host ::ng-deep header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ebedf3;
+}
+:host ::ng-deep footer {
+  padding: 15px 20px;
+  border-top: 1px solid #ebedf3;
+  display: flex;
+}
+@keyframes onPageLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-container {
+  animation: onPageLoad 0.7s forwards ease-in;
+  background-color: #fff;
+  border-radius: 1rem;
+//   margin: auto;
+//   margin-top: 30px;
+//   margin-bottom: 30px;
+  box-shadow: 5px 5px 30px 5px rgba(82, 63, 105, 0.05);
+
+  .content-container__header {
+    .title {
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: #181c32;
+      margin: 0;
+    }
+  }
+
+  .content-container__body {
+    padding: 15px 20px;
+  }
+
+  .pagination-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .pagination {
+      margin: 0;
+    }
+
+    .pagination-page-size {
+      margin: 0;
+    }
+
+    .spinner-border {
+      width: 1rem;
+      height: 1rem;
+      border-width: 2px;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+
+      label {
+        margin: 0;
+      }
+    }
+  }
+
+  .content-container__footer {
+    button {
+      min-width: 120px;
+    }
+
+    //   .btn-save {
+    //     order: 1;
+    //   }
+
+    //   .btn-archive {
+    //     order: 2;
+    //   }
+
+    //   .btn-cancel {
+    //     order: 3;
+    //   }
+  }
+}
+
+//   @media (max-width: 767px) {
+//   }
+
+//   @media (max-width: 575px) {
+//     .content-container {
+//       border-radius: 5px;
+//       margin: auto;
+//       margin-top: 30px;
+//       margin-bottom: 30px;
+//       overflow: hidden;
+//       box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
+//       transition: all 0.5s ease-in-out;
+
+//       .content-container__header {
+//         padding: 15px 20px;
+//         justify-content: space-between;
+//         align-items: center;
+//         transition: all 0.5s ease-in-out;
+
+//         .title {
+//           font-weight: 600;
+//           font-size: 1rem;
+//           color: #181c32;
+//           margin: 0;
+//           width: 100%;
+//         }
+
+//         button {
+//           margin-top: 1rem;
+//           font-size: 0.87rem;
+//         }
+
+//         border-bottom: 1px solid #ebedf3;
+//       }
+//     }
+//     :host ::ng-deep header {
+//       display: flex;
+//       flex-direction: column;
+//     }
+//   }
