@@ -1,9 +1,25 @@
-    <app-content-container>
-      <header>
+<app-content-container>
+    <header>
         <h3>Hello</h3>
-      </header>
-  
-      <section>
+    </header>
+
+    <section>
+        <div class="row mb-3">
+            <div class="col-lg-4">
+                <label class="form-label">select name</label>
+                <select class="form-select" aria-label=".form-select-lg example">
+                    <option selected>name</option>
+                    <option value="1">Leena</option>
+                    <option value="2">Omar</option>
+                    <option value="3">Aliana</option>
+                    <option value="3">Kareem</option>
+                  </select>
+            </div>
+            <div class="col-lg-4">
+                <label class="form-label">search by status</label>
+                <input type="text" class="form-control" placeholder="Status">
+            </div>
+        </div>
         <table class="table">
             <thead>
                 <th>S.No</th>
@@ -18,74 +34,40 @@
                     <td data-label="Name">Leena</td>
                     <td data-label="Age">26</td>
                     <td data-label="Marks%">99%</td>
-                    <td data-label="Status">Passed</td>
+                    <td data-label="Status">
+                        <span class="badge rounded-pill bg-success">Excellent</span>
+                    </td>
                 </tr>
                 <tr>
                     <td data-label="S.No">2</td>
                     <td data-label="Name">Omar</td>
                     <td data-label="Age">27</td>
                     <td data-label="Marks%">97%</td>
-                    <td data-label="Status">Passed</td>
+                    <td data-label="Status">
+                        <span class="badge rounded-pill bg-success">Excellent</span>
+                    </td>
                 </tr>
                 <tr>
                     <td data-label="S.No">3</td>
                     <td data-label="Name">Aliana</td>
                     <td data-label="Age">30</td>
                     <td data-label="Marks%">30%</td>
-                    <td data-label="Status">Failed</td>
+                    <td data-label="Status">
+                        <span class="badge rounded-pill bg-danger">Failed</span>
+                    </td>
                 </tr>
                 <tr>
                     <td data-label="S.No">4</td>
                     <td data-label="Name">Kareem</td>
                     <td data-label="Age">32</td>
-                    <td data-label="Marks%">90%</td>
-                    <td data-label="Status">Passed</td>
+                    <td data-label="Marks%">56%</td>
+                    <td data-label="Status">
+                        <span class="badge rounded-pill bg-warning">Fair</span>
+                    </td>
                 </tr>
             </tbody>
         </table>
-      </section>
-  
-     <footer>
+    </section>
+    <footer>
     </footer>
-    </app-content-container>
-<!-- <div class="container" >
-    <table class="table">
-        <thead>
-            <th>S.No</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Marks%</th>
-            <th>Status</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td data-label="S.No">1</td>
-                <td data-label="Name">Leena</td>
-                <td data-label="Age">26</td>
-                <td data-label="Marks%">99%</td>
-                <td data-label="Status">Passed</td>
-            </tr>
-            <tr>
-                <td data-label="S.No">2</td>
-                <td data-label="Name">Omar</td>
-                <td data-label="Age">27</td>
-                <td data-label="Marks%">97%</td>
-                <td data-label="Status">Passed</td>
-            </tr>
-            <tr>
-                <td data-label="S.No">3</td>
-                <td data-label="Name">Aliana</td>
-                <td data-label="Age">30</td>
-                <td data-label="Marks%">30%</td>
-                <td data-label="Status">Failed</td>
-            </tr>
-            <tr>
-                <td data-label="S.No">4</td>
-                <td data-label="Name">Kareem</td>
-                <td data-label="Age">32</td>
-                <td data-label="Marks%">90%</td>
-                <td data-label="Status">Passed</td>
-            </tr>
-        </tbody>
-    </table>
-</div> -->
+</app-content-container>

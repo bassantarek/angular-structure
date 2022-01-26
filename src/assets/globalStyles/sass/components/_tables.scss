@@ -1,9 +1,7 @@
 .table {
   width: 100%;
   border-collapse: collapse;
-//   thead {
-//       border-radius: 1rem 1rem 0 0 !important;
-//   }
+  text-align: center;
   tbody {
     tr:nth-child(even) {
       background-color: #f5f5f5;

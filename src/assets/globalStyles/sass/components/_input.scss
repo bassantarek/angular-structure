@@ -1,0 +1,7 @@
+input[type],.form-select {
+    border-radius: 1rem;
+    &:focus {
+        box-shadow: none;
+        border: 1px solid #ced4da;
+    }
+}
